@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/instance: rag-onesixtest-may29
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rag-onesixtest-may29
+  name: rag-onesixtest-may29
+spec:
+  ports:
+    - port: 8501
+      protocol: TCP
+      targetPort: 8501
+  selector:
+    app.kubernetes.io/instance: rag-onesixtest-may29
